@@ -1,0 +1,131 @@
+#searchMenu {
+    text-align: center;
+    position: relative;
+    padding-top: 15px;
+    margin-left: 70px;
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid #E4E0E1; */
+}
+#searchMenu #searchBar {
+    position: relative;
+    width: 80%;
+    text-align: left;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #6f6f6f;
+    outline: none;
+    padding-left: 50px;
+    padding-right: 20px;
+    font-size: 1.2em;
+    font-family: Roboto, Arial, Sans-Serif;
+    color: #929292;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.16), 0 2px 2px rgba(0,0,0,0.23);
+}
+#searchMenu #searchIcon {
+    position: absolute;
+    z-index: 1;
+    padding-top: 9px;
+    left: 17px;
+    font-size: 22px;
+    color: #4c4c4c;
+}
+
+.card-container {
+    background: #EEE;
+    font-family: arial;
+}
+
+.card {
+    padding: 20px;
+    list-style: none;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px lightgray;
+    width: 60%;
+    height: 230px;
+    margin: 10px;
+    background: white;
+    counter-increment: card;
+    position: absolute;
+    z-index: 1;
+    transform: scale(0.8);
+    display:none;
+}
+
+.card.animate-prev {
+    transform: translateX(-150%) !important;
+}
+
+.card.animate-next {
+    transform: translateX(170%) !important;
+}
+
+.card.active,
+.card.prev,
+.card.next,
+.card.animate-prev,
+.card.animate-next{
+    display: block;
+    transition: transform 1.5s ease;
+}
+.card.active {
+    z-index: 2;
+    transform: scale(1)translateX(12%);
+}
+
+.card.prev {
+    transform: scale(0.8)translateX(-110%);
+}
+
+.card.next {
+    transform: scale(0.8)translateX(140%);
+}
+
+/* cell number */
+.card:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: black;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 40%;
+}
+.swiper-slide {
+    padding: 20px;
+    list-style: none;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px lightgray;
+    width: 60%;
+    height: 100px;
+    margin: 10px;
+    background: white;
+    counter-increment: card;
+    position: absolute;
+    z-index: 1;
+    transform: scale(0.8);
+    display:none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-img{
+    width: 100%;
+    height: 100%;
+
+}
