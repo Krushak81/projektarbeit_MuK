@@ -18,6 +18,8 @@
 
 
 
+
+
 <link href="styles/style.css"     		 rel="stylesheet" type="text/css">
 <link href="styles/framework.css" 		 rel="stylesheet" type="text/css">
 <link href="styles/bootstrap/bootstrap.min.css" 		 rel="stylesheet" type="text/css">
@@ -28,32 +30,38 @@
 <link href="styles/custom.css"			 rel="stylesheet" type="text/css">
 <link href="styles/swiper.css"			 rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="scripts/jquery.js"></script>
-<script type="text/javascript" src="scripts/jqueryui.js"></script>
-<script type="text/javascript" src="scripts/bootstrap/bootstrap.min.js"></script>
-<script type="text/javascript" src="scripts/framework.plugins.js"></script>
-<script type="text/javascript" src="scripts/custom.js"></script>
-<script type="text/javascript" src="scripts/card-slider.js"></script>
-<script type="text/javascript" src="scripts/swiper.min.js"></script>
 
-</head>
-<body> 
+    <!--   Muss noch lokal eingebunden werden!!  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="scripts/jquery.js"></script>-->
+ <script type="text/javascript" src="scripts/jqueryui.js"></script>
+ <script type="text/javascript" src="scripts/bootstrap/bootstrap.min.js"></script>
+ <script type="text/javascript" src="scripts/framework.plugins.js"></script>
+ <script type="text/javascript" src="scripts/custom.js"></script>
+ <script type="text/javascript" src="scripts/card-slider.js"></script>
+ <script type="text/javascript" src="scripts/swiper.min.js"></script>
 
-<div id="preloader">
-	<div id="status">
-    	<p class="center-text">
-			Loading the content...
-            <em>Loading depends on your connection speed!</em>
-        </p>
-    </div>
-</div>
-    
-<div class="hide-content"></div>       
-<div class="all-elements">
-    <div class="snap-drawers">
-        <!-- Left Sidebar -->
+
+
+
+ </head>
+ <body>
+
+ <div id="preloader">
+     <div id="status">
+         <p class="center-text">
+             Loading the content...
+             <em>Loading depends on your connection speed!</em>
+         </p>
+     </div>
+ </div>
+
+ <div class="hide-content"></div>
+ <div class="all-elements">
+     <div class="snap-drawers">
+         <!-- Left Sidebar -->
         <div class="snap-drawer snap-drawer-left">
-            <a href="index_all.html"><i class="fa fa-home"></i>Home</a>
+            <a href="index.html"><i class="fa fa-home"></i>Home</a>
             <a href="page-features.html" class="selected-item"><i class="fa fa-cog"></i>Features</a>
             <a href="page-media.html"><i class="fa fa-picture-o"></i>Media</a>
             <a href="page-blog.html"><i class="fa fa-pencil"></i>Blog</a>
@@ -201,28 +209,34 @@
                         <div class=" swiper-container ">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="card card-entdecke">
-                                        <img class="card-img-top" src="images/pictures/wochenmarkt.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title card-title-app">Wochenmärkte</h5>
+                                    <a href="search-results.html" class="fill-div">
+                                        <div class="card card-entdecke">
+                                            <img class="card-img-top" src="images/pictures/wochenmarkt.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title card-title-app">Wochenmärkte</h5>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
+                                    <a href="search-results.html" class="fill-div">
                                     <div class="card card-entdecke">
                                         <img class="card-img-top" src="images/pictures/wochenmarkt.jpg" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title card-title-app">Hofläden</h5>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
+                                    <a href="search-results.html" class="fill-div">
                                     <div class="card card-entdecke">
                                         <img class="card-img-top" src="images/pictures/wochenmarkt.jpg" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title card-title-app">Bauernläden</h5>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
