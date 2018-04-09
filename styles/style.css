@@ -374,7 +374,7 @@ body{
     font-family:'Roboto', sans-serif;
     text-transform:uppercase;
     font-weight:600;
-    font-size:11px;
+    font-size: 11px;
     color:#d6dee6;
     text-shadow:0px 2px 0px #000000;
     width:80px;
@@ -384,7 +384,7 @@ body{
     padding-top:22px;
     border-bottom:solid 1px #161b1f;
     -webkit-box-shadow: 0 1px 0 0 #3e444a;
-            box-shadow: 0 1px 0 0 #3e444a;
+    box-shadow: 0 1px 0 0 #3e444a;
 }
 
 .snap-drawer a:hover{
@@ -894,4 +894,4 @@ body{
 
 
 
-
+

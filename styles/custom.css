@@ -105,7 +105,37 @@ body{
     font-size: 1.5rem;
     line-height: 1;
     margin-bottom: 1.2rem;
+    text-align: left;
 }
+
+.sub-header-1{
+    color: #636363;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.list-header-1{
+    color: #636363;
+    font-weight: 400;
+    font-size: 1.0rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.recipe-list-corner{
+    position: relative;
+    display: block;
+    padding: .25rem 1.5rem;
+    margin-bottom: -1px;
+    background-color: transparent;
+    border: none;
+}
+
+
 
 .content-p{
     color: inherit;
@@ -292,30 +322,30 @@ body{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
 }
 
-
 .search-result-card-img{
     vertical-align: middle;
     border-style: none;
     display: block;
-    position: relative;
+    position: absolute;
     overflow: visible;
-    background: url("../images/test/spargelhof.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100%;
     width: 100%;
     border-radius: 15px;
-
 }
 
-.search-result-card-img .text {
+.card-img-container{
+    height: 100%;
+    width: 100%;
+}
+
+.card-img-container .text {
     position: absolute;
     color: white;
     bottom: 3px;
     right: 8px;
     padding: 1px 3px;
 }
-.search-result-card-img .text p {
+.card-img-container .text p {
     margin-top: 0;
     text-align: center;
     font-weight:  700;
@@ -324,7 +354,7 @@ body{
     line-height: 14px;
 }
 
-.search-result-card-img::before {
+.location::before {
     content: '';
     background: #dd645b;
     width: 100%;
@@ -335,6 +365,19 @@ body{
     right: 0;
     transform: rotate(-45deg) translateY(100%);
 }
+
+.recipe::before {
+    content: '';
+    background: #6ecedd;
+    width: 100%;
+    position: absolute;
+    bottom: -45px;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(-45deg) translateY(100%);
+}
+
 
 .search-result-card-favorite{
 
@@ -353,6 +396,7 @@ body{
 
 .search-result-card-body .header-1{
     margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
 }
 
 a.fill-div {
@@ -363,3 +407,60 @@ a.fill-div {
     color: #636363;
 }
 
+
+
+
+.spacer{
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+.spacer-line{
+    border-bottom: 1px solid #c6c6c6 !important;
+}
+.recipe-detail-top{
+    width: 100%;
+    height: 280px;
+}
+
+.recipe-detail-text{
+    display: block;
+}
+.recipe-detail-text p{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.0rem;
+    text-align: left;
+}
+
+.detail-img-box {
+    overflow: hidden;
+    height: 100%;
+}
+
+.detail-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.detail-img-container{
+    height: 100%;
+    width: 100%;
+}
+
+.detail-img-container .text {
+    position: absolute;
+    color: white;
+    bottom: 3px;
+    right: 8px;
+    padding: 1px 3px;
+}
+
+.detail-img-container .text p {
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 4px;
+    line-height: 18px;
+}
