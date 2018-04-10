@@ -226,6 +226,7 @@
   bottom: 10px;
   left: 0;
   width: 100%;
+  /* padding-top: 15px; */
 }
 /* Bullets */
 .swiper-pagination-bullets-dynamic {

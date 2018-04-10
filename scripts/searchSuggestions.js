@@ -47,3 +47,15 @@ function searchSuggestions() {
 
 
 
+function openSearchResults() {
+
+    window.open("search-results.html");
+
+
+}
+
+
+
+
+
+

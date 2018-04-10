@@ -125,16 +125,16 @@
                 </div>-->
                 <div class="modal-body">
                     <div class="test">
-                        <div class="test">
+                        <form action="search-results.html" method="get">
                             <label class="search-label" for="SearchBarLocations">Reiseziel</label>
                             <div dir="ltr">
                                 <div class="search-modal-searchbar_1">
                                     <div class="search-modal-searchbar_2">
-                                        <input type="text" autocomplete="on" class="typeahead search-modal-searchbar-text" id="SearchBarLocations" name="query" placeholder="Gib z.&nbsp;B. „Offenburg“ ein" value="" >
+                                        <input type="text" autocomplete="on" class="typeahead search-modal-searchbar-text" id="SearchBarLocations" name="query" placeholder="Gib z.&nbsp;B. „Offenburg“ ein" value="" autofocus>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -207,6 +207,7 @@
 
                         <h1 class="header-1">Entdecke [App-Name]</h1>
                         <div class=" swiper-container ">
+
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a href="search-results.html" class="fill-div">
@@ -239,6 +240,7 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
 
                 </div>
@@ -320,14 +322,17 @@
 
 
 <script>
+
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 2,
         spaceBetween: 10,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-        },
+            dynamicBullets: true
+        }
     });
+
 </script>
 </body>
 
