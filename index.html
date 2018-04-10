@@ -14,7 +14,7 @@
 
 
 
-<title>Epsilon Mobile Framework - Version 2.0</title>
+<title>Regionale Suche</title>
 
 
 
@@ -34,12 +34,14 @@
     <!--   Muss noch lokal eingebunden werden!!  -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!--<script type="text/javascript" src="scripts/jquery.js"></script>-->
- <script type="text/javascript" src="scripts/jqueryui.js"></script>
+
  <script type="text/javascript" src="scripts/bootstrap/bootstrap.min.js"></script>
  <script type="text/javascript" src="scripts/framework.plugins.js"></script>
  <script type="text/javascript" src="scripts/custom.js"></script>
  <script type="text/javascript" src="scripts/card-slider.js"></script>
  <script type="text/javascript" src="scripts/swiper.min.js"></script>
+ <script type="text/javascript" src="scripts/searchSuggestions.js"></script>
+
 
 
 
@@ -124,11 +126,11 @@
                 <div class="modal-body">
                     <div class="test">
                         <div class="test">
-                            <label class="search-label" for="GeocompleteController-via-SearchBar">Reiseziel</label>
+                            <label class="search-label" for="SearchBarLocations">Reiseziel</label>
                             <div dir="ltr">
                                 <div class="search-modal-searchbar_1">
                                     <div class="search-modal-searchbar_2">
-                                        <input type="text" autocomplete="off" class="search-modal-searchbar-text" id="GeocompleteController-via-SearchBar" name="query" placeholder="Gib z.&nbsp;B. „Offenburg“ ein" value="">
+                                        <input type="text" autocomplete="on" class="typeahead search-modal-searchbar-text" id="SearchBarLocations" name="query" placeholder="Gib z.&nbsp;B. „Offenburg“ ein" value="" >
                                     </div>
                                 </div>
                             </div>
@@ -139,9 +141,6 @@
         </div>
     </div>
 
-
-
-    
     <a href="#" class="footer-ball"><i class="fa fa-navicon"></i></a>
     
     <!-- Page Content-->
